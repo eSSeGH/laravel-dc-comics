@@ -15,7 +15,7 @@
                 <th scope="col">Descrizione</th>
                 <th scope="col">Prezzo</th>
                 <th scope="col">Serie</th>
-                <th scope="col">Data d'acuisto</th>
+                <th scope="col">Data</th>
                 <th scope="col">Tipo</th>
             </tr>
             </thead>
@@ -26,7 +26,10 @@
                     <td>
                         <img style="max-width: 150px;" src="{{ $comic->thumb }}" alt="">
                     </td>
-                    <td>{{ $comic->title }}</td>
+                    <td>
+                        {{ $comic->title }} <br>
+                        <a href="{{ route('comics.show', $comic->id) }}">Vai al fumetto</a>
+                    </td>
                     <td style="max-height: 50px; overflow-y: scroll;">{{ $comic->description }}</td>
                     <td>{{ $comic->price }} $</td>
                     <td>{{ $comic->series }}</td>

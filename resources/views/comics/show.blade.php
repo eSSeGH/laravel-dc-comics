@@ -3,19 +3,29 @@
 @section('main-content')
 <main>
 
-<div class="black-section">
+<div class="container">
 
-    <div class="container">
-
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+    <div class="card mx-auto mt-5" style="width: 400px;">
+        <img src="{{$comic['thumb']}}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h3 class="card-title">{{$comic['title']}}</h5>
+            <h4 class="card-text">Descrizione: 
+                <p style="font-size: 0.8rem;">{{ $comic['description']}}</p>
+            </h4>
+            <h4 class="card-text">Prezzo: 
+                <span style="font-size: 0.8rem;">{{ $comic['price'] }} $</span>
+            </h4>
+            <h4 class="card-text">Serie: 
+                <span style="font-size: 0.8rem;">{{ $comic['series'] }}</span>
+            </h4>
+            <h4 class="card-text">Data: 
+                <span style="font-size: 0.8rem;">{{ $comic['sale_date'] }}</span>
+            </h4>
+            <h4 class="card-text">Tipo: 
+                <span style="font-size: 0.8rem;">{{ $comic['type'] }}</span>
+            </h4>
+            <a href="" class="btn btn-primary">Acquista</a>
         </div>
-
     </div>
 
 </div>
@@ -23,4 +33,4 @@
 </main>
 @endsection
 
-@section('page-title', $page_title)
+@section('page-title', $comic->title)
