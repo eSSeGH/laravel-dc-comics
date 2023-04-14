@@ -33,4 +33,4 @@
 </main>
 @endsection
 
-@section('page-title', $comic->title)
+@section('page-title', $comic['title'])
