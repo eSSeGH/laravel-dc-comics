@@ -7,20 +7,7 @@
 
     <div class="container">
 
-        <div class="row">
-
-            {{-- @foreach($comics as $comic)
-            <div class="col">
-
-                <div class="card">
-                    <img src="{{ Vite::asset('$comic[thumb]') }}" alt="">
-                    <span>{{ $comic['title'] }}</span>
-                </div>
-
-            </div>
-            @endforeach --}}
-
-        </div>
+        <h1>Benvenuto in DC COMICS!</h1>
 
     </div>
 
