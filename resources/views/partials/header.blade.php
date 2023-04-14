@@ -1,4 +1,4 @@
-<header class="main-header">
+<header class="main-header" style="height: 90px;">
 
     <div class="container flex-center">
 
@@ -13,7 +13,7 @@
                     <a href="">CHARACTERS</a>
                 </li>
                 <li class="nav-link">
-                    <a href="">COMICS</a>
+                    <a href="{{ route('comics.index') }}">COMICS</a>
                 </li>
                 <li class="nav-link">
                     <a href="">MOVIES</a>
@@ -38,6 +38,9 @@
                 </li>
                 <li class="nav-link">
                     <a href="">SHOP</a>
+                </li>
+                <li class="nav-link">
+                    <a href="{{ route('comics.create') }}">INSERT COMIC</a>
                 </li>
             </ul>
 
