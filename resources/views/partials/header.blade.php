@@ -1,9 +1,9 @@
-<header class="main-header" style="height: 90px;">
+<header class="main-header">
 
-    <div class="container flex-center">
+    <div class="container">
 
         <div class="logo">
-            <img src="{{ Vite::asset('../../images/dc-logo.png') }}" alt="dc logo horizontal">
+            <img src="{{ asset('dc-img/dc-logo.png') }}" alt="dc logo horizontal">
         </div>
 
         <nav class="navbar">

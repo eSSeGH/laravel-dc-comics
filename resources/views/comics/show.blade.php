@@ -5,7 +5,7 @@
 
 <div class="container">
 
-    <div class="card mx-auto mt-5" style="width: 400px;">
+    <div class="card mx-auto mt-5">
         <img src="{{$comic['thumb']}}" class="card-img-top" alt="...">
         <div class="card-body">
             <h3 class="card-title">{{$comic['title']}}</h5>
