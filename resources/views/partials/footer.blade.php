@@ -17,10 +17,7 @@
                         <li><a href="">Videos</a></li>
                         <li><a href="">News</a></li>
                     </ul>
-            
-                </div>
 
-                <div class="col">
                     <h3>SHOP</h3>
             
                     <ul>
@@ -31,7 +28,7 @@
                 </div>
 
                 <div class="col">
-                    <h3>DC COMICS</h3>
+                    <h3>DC</h3>
             
                     <ul>
                         <li><a href="">Terms of use</a></li>
@@ -50,7 +47,7 @@
                 </div>
 
                 <div class="col">
-                    <h3>DC COMICS</h3>
+                    <h3>SITES</h3>
             
                     <ul>
                         <li><a href="">DC</a></li>

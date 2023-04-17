@@ -8,6 +8,11 @@ use App\Models\Comic;
 
 class ComicController extends Controller
 {
+    public function welcome() {
+        $page_title = 'Benvenuto';
+        return view('welcome', compact('page_title'));
+    }
+
     public function index() {
         $comics = Comic::all();
         $page_title = 'Lista fumetti';

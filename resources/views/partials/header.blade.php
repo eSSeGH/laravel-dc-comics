@@ -2,9 +2,9 @@
 
     <div class="container">
 
-        <div class="logo">
+        <a href="{{ route('welcome') }}" class="logo">
             <img src="{{ asset('dc-img/dc-logo.png') }}" alt="dc logo horizontal">
-        </div>
+        </a>
 
         <nav class="navbar">
 
