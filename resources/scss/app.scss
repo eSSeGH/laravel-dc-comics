@@ -72,7 +72,43 @@ a {
     }
 }
 
+
 // FOOTER
+
+// MARKETING SECTION
+
+.marketing {
+    background-color: #0D6EFD;
+    padding: 52px 0;
+
+    .marketing-cards {
+        justify-content: space-around;
+
+        .card {
+            gap: 10px;
+            background-color: #0D6EFD;
+
+
+            img {
+                height: 60px;
+                transition: filter 300ms;
+            }
+
+            span {
+                color: white;
+                font-size: 1rem;
+                transition: filter 300ms;
+            }
+
+            &:hover img,
+            &:hover span {
+                filter: drop-shadow(0 0 0.75rem white);
+            }
+        }
+    }
+}
+
+// FOOTER LINKS SECTION
 
 .link-footer {
     background-image: url(/dc-img/footer-bg.jpg);
@@ -121,5 +157,59 @@ a {
         position: absolute;
         top: -70px;
         right: 320px;
+    }
+}
+
+// SUBSCRIPTION SECTION
+
+.subscription-bar {
+    padding: 25px;
+    background-color: rgb(55, 55, 55);
+    z-index: 20;
+
+    .container {
+        justify-content: space-between;
+
+        .sign-up-btn {
+            border: 2px solid #0D6EFD;
+            color: #0D6EFD;
+            font-size: 14px;
+            padding: 18px;
+            background-color: rgb(55, 55, 55);
+            transition: transform 300ms;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+
+        .follow-us {
+            gap: 30px;
+
+            span {
+                font-size: 18px;
+                color: #0D6EFD;
+            }
+
+            ul {
+                gap: 20px;
+
+                li {
+
+                    a {
+                        height: 35px;
+                        aspect-ratio: 1;
+
+                        img {
+                            transition: transform 300ms;
+
+                            &:hover {
+                                transform: scale(1.2);
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
