@@ -12,8 +12,8 @@
                 <li class="nav-link">
                     <a href="">CHARACTERS</a>
                 </li>
-                <li class="nav-link">
-                    <a href="{{ route('comics.index') }}">COMICS</a>
+                <li class="nav-link" >
+                    <a href="{{ route('comics.index') }}" style="color: lime;">COMICS</a>
                 </li>
                 <li class="nav-link">
                     <a href="">MOVIES</a>
@@ -39,8 +39,8 @@
                 <li class="nav-link">
                     <a href="">SHOP</a>
                 </li>
-                <li class="nav-link">
-                    <a href="{{ route('comics.create') }}">INSERT COMIC</a>
+                <li class="nav-link" >
+                    <a href="{{ route('comics.create') }}" style="color: lime;">INSERT COMIC</a>
                 </li>
             </ul>
 
