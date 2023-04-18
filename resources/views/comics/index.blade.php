@@ -17,6 +17,7 @@
                 <th scope="col">Serie</th>
                 <th scope="col">Data</th>
                 <th scope="col">Tipo</th>
+                <th scope="col">Opzioni</th>
             </tr>
             </thead>
             <tbody>
@@ -35,11 +36,14 @@
                     <td>{{ $comic->series }}</td>
                     <td>{{ $comic->sale_date }}</td>
                     <td>{{ $comic->type }}</td>
-                    <td>
+                    <td class="d-flex flex-column align-items-center" style="gap: 10px;">
                         <a href="{{ route('comics.edit', $comic) }}" class="btn btn-secondary btn-sm">EDIT</a>
-                    </td>
-                    <td>
-                        <a href="{{ route('comics.destroy', $comic) }}" class="btn btn-secondary btn-sm">DELETE</a>
+                        <form action="{{ route('comics.destroy', $comic) }}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <input type="submit"  class="btn btn-danger btn-sm" value="DELETE">
+                        </form>
+                        
                     </td>
                 </tr>
                 @endforeach
