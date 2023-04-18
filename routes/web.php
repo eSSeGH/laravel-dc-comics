@@ -16,14 +16,19 @@ use App\Http\Controllers\Comic\ComicController;
 
 Route::get('/', [ComicController::class, 'welcome'])->name('welcome');
 
-Route::get('/comics', [ComicController::class, 'index'])->name('comics.index');
+// Route::get('/comics', [ComicController::class, 'index'])->name('comics.index');
 
-Route::get('/comics/create', [ComicController::class, 'create'])->name('comics.create');
+// Route::get('/comics/create', [ComicController::class, 'create'])->name('comics.create');
 
-Route::get('/comics/{comic}', [ComicController::class, 'show'])->name('comics.show');
+// Route::get('/comics/{comic}', [ComicController::class, 'show'])->name('comics.show');
 
-Route::post('/comics', [ComicController::class, 'store'])->name('comics.store');
+// Route::post('/comics', [ComicController::class, 'store'])->name('comics.store');
 
-Route::get('/comics/{comic}/edit', [ComicController::class, 'edit'])->name('comics.edit');
+// Route::get('/comics/{comic}/edit', [ComicController::class, 'edit'])->name('comics.edit');
 
-Route::put('comics/{comic}', [ComicController::class, 'update'])->name('comics.update');
+// Route::put('comics/{comic}', [ComicController::class, 'update'])->name('comics.update');
+
+// Route::delete('comics/{comic}', [ComicController::class, 'destroy'])->name('comics.destroy');
+
+// LE ROTTE DI CUI SOPRA SONO TUTTE RAGGRUPPATE NEL METODO::RESOURCE DELLA FACADE ROUTE
+Route::resource('comics', ComicController::class);

@@ -71,4 +71,11 @@ class ComicController extends Controller
         return to_route('comics.show', $comic);
 
     }
+
+    public function destroy(Comic $comic) {
+
+        $comic->delete();
+
+        return redirect()->route('comics.index');
+    }
 }
