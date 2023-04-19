@@ -32,7 +32,7 @@ return [
     ],
     'boolean' => ':attribute deve essere true o false.',
     'confirmed' => ':attribute non corrisponde.',
-    'current_password' => 'password non è corretto.',
+    'current_password' => 'password non è corretta.',
     'date' => ':attribute non è una data valida.',
     'date_equals' => ':attribute deve essere una data uguale a :date.',
     'date_format' => ':attribute non corrisponde al formato :format.',
@@ -139,12 +139,13 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Righe di Validazione in Lingua Personalizzata
+    | Messaggi di Errore di Validazione Personalizzati
     |--------------------------------------------------------------------------
     |
-    | Di seguito è possibile specificare i messaggi di validazione personalizzati per quegli attributi 
-    | che utilizzano la convenzione "attribute.rule" per dare un nome alla riga. Ciò rende più veloce
-    | specificare una riga in lingua personalizzata per una data regola di attributo.
+    | Di seguito è possibile specificare i messaggi di errore di validazione
+    | personalizzati per quegli attributi che utilizzano la convenzione 
+    |"attribute.rule" per dare un nome alla riga. Ciò rende più veloce specificare
+    | un messaggio di errore personalizzato per una data "attribute.rule".
     |
     */
 
