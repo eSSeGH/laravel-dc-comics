@@ -24,7 +24,7 @@
             <h4 class="card-text">Tipo: 
                 <span style="font-size: 0.8rem;">{{ $comic['type'] }}</span>
             </h4>
-            <a href="" class="btn btn-primary">Acquista</a>
+            <a href="{{ route('comics.edit', $comic) }}" class="btn btn-primary">Modifica</a>
         </div>
     </div>
 

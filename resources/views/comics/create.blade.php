@@ -17,31 +17,38 @@
 
                     <div class="mb-3">
                         <label for="title" class="form-label">Titolo:</label>
-                        <input type="text" class="form-control" name="title" id="title">
+                        <input type="text" class="form-control" name="title" id="title" value="{{ old('title') }}">
                     </div>
                     <div class="mb-3">
                         <label for="thumb" class="form-label">URL immagine:</label>
-                        <input type="text" class="form-control" name="thumb" id="thumb">
+                        <input type="text" class="form-control" name="thumb" id="thumb" value="{{ old('thumb') }}">
                     </div>
                     <div class="mb-3">
                         <label for="description" class="form-label">Descrizione:</label>
-                        <input type="text" class="form-control" name="description" id="description">
+                        <textarea type="text" class="form-control" name="description" id="description">
+                            {{ old('description') }}
+                        </textarea>
                     </div>
                     <div class="mb-3">
                         <label for="price" class="form-label">Prezzo:</label>
-                        <input type="text" class="form-control" name="price" id="price">
+                        <input type="text" class="form-control" name="price" id="price" value="{{ old('price') }}">
                     </div>
                     <div class="mb-3">
                         <label for="series" class="form-label">Serie:</label>
-                        <input type="text" class="form-control" name="series" id="series">
+                        <input type="text" class="form-control" name="series" id="series" value="{{ old('series') }}">
                     </div>
                     <div class="mb-3">
                         <label for="sale_date" class="form-label">Data:</label>
-                        <input type="text" class="form-control" name="sale_date" id="sale_date">
+                        <input type="text" class="form-control" name="sale_date" id="sale_date" value="{{ old('sale_date') }}">
                     </div>
+
                     <div class="mb-3">
                         <label for="type" class="form-label">Tipo:</label>
-                        <input type="text" class="form-control" name="type" id="type">
+                        <select class="form-select" name="type" aria-label="Default select example">
+                            <option selected>Seleziona un tipo di fumetto</option>
+                            <option @selected( old('type') == 'Comic Book') value="Comic Book">Comic Book</option>
+                            <option @selected( old('type') == 'Graphic Novel') value="Graphic Novel">Graphic Novel</option>
+                        </select>
                     </div>
 
                     <div class="btn-parent d-flex justify-content-center">
@@ -49,6 +56,16 @@
                     </div>
                 
                 </form>
+
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
 
             </div>
         </div>

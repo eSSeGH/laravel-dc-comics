@@ -59,14 +59,14 @@ a {
                 line-height: 120px;
                 padding: 0 16px;
 
-                &:active {
-                    border-bottom: 5px solid $blue;
-                }
-
                 &:hover {
                     font-size: 0.9rem;
                     font-weight: 600;
                 }
+            }
+
+            .nav-link-selected {
+                border-bottom: 5px solid $blue;
             }
         }
     }

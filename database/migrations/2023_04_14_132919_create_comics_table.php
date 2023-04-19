@@ -17,7 +17,7 @@ return new class extends Migration
 
             $table->id();
             $table->string('title', 50);
-            $table->text('description');
+            $table->text('description')->nullable();
             $table->string('thumb');
             $table->float('price', 5, 2)->unsigned();
             $table->string('series', 50);
